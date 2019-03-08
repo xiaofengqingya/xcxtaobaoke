@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background:#fff;
+  font-family:"微软雅黑";
+}
+
+.zhanwei{
+    height:120rpx;
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color:#fff;
+    z-index: 10;
+    border-top:1px solid #cecece;
+}
+.navbar ul li{
+    float:left;
+    width:25%;
+    text-align:center;
+    margin:12rpx auto;
+    color:#b5b5b5;
+}
+.navbar ul li image{
+    width:60rpx;
+    height:60rpx;
+    display: block;
+    margin:0 auto;
+}
+.navbar-name{
+    display:block;
+    font-size:26rpx;
+   
+
+}
+.active{
+  color: #4f88be;
+}
+.clear{
+   clear:both;
+}

@@ -1,0 +1,15 @@
+<template name="msgItem">
+  <view class="zhanwei"></view>
+  <view class="navbar">
+    <ul>
+     <block wx:for="{{navbar}}" wx:key="title">
+      <li>
+        <navigator url="{{item.url}}" open-type='redirect'>
+          <image src="{{linkUrl}}{{item.src}}"></image>
+          <text class="navbar-name active">{{item.name}}</text>
+        </navigator>
+      </li>
+      </block>
+    </ul>
+  </view>
+</template>

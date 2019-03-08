@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="banner" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <swiper-item>
+                <image src="{{linkUrl}}/sulei/banner1.png" class="slide-image"  />
+            </swiper-item>
+            <swiper-item>
+             <image src="{{linkUrl}}/sulei/banner2.png" class="slide-image"  />
+            </swiper-item>
+            <swiper-item>
+              <image src="{{linkUrl}}/sulei/banner3.png" class="slide-image"  />
+            </swiper-item>
+    </swiper>
+    <view class="category">
+        <ul>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico1.png"></image><text class="category-name">网站建设</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico2.png"></image><text class="category-name">小程序</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico3.png"></image><text class="category-name">电商平台</text></navigator></li>
+            <li><navigator url="/pages/coupons/coupons"><image src="{{linkUrl}}/sulei/ico4.png"></image><text class="category-name">优惠券</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico5.png"></image><text class="category-name">域名空间</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico6.png"></image><text class="category-name">托管服务</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico7.png"></image><text class="category-name">400电话</text></navigator></li>
+            <li><navigator url="/pages/about/about"><image src="{{linkUrl}}/sulei/ico8.png"></image><text class="category-name">企业邮箱</text></navigator></li>
+        </ul>
+    </view>
+    <view class="about">
+    <view class="about-con">
+       <image src="{{linkUrl}}/sulei/sulei.jpg" style="width:100%" mode="widthFix"></image>
+      </view>
+  </view>
+    
+  <import src="/pages/temp/temp.wxml"/>
+  <template is="msgItem" data="{{linkUrl,navbar}}"/>
+</view>

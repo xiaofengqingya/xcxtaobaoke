@@ -1,0 +1,11 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="about">
+    <view class="about-con">
+       <image src="{{linkUrl}}/sulei/suleiAbout.jpg" style="width:100%" mode="widthFix"></image>
+      </view>
+  </view>
+  <import src="/pages/temp/temp.wxml"/>
+  <template is="msgItem" data="{{linkUrl,navbar}}"/>
+  
+</view>

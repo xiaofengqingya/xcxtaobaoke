@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{info_item}}" wx:key="info_item" wx:for-index="idx" wx:for-item="item">
+    <view class="top" hidden="{{tishi}}">
+      <text>复制淘口令成功！打开手机淘宝即可购买！</text>
+    </view>
+
+    <view class="litpic">
+      <image src="{{item.pict_url}}" style="width:100%" mode="widthFix"></image>
+    </view>
+    <view class="content">
+      <view class="expertInfo">
+        <view class="name">
+          {{item.title}}</view>
+      </view>
+      <view class="price">
+        <view class="jhj">
+          <i>劵后价</i>
+          <text style='color:red;'>￥ {{jhj}}</text>
+          <text>优惠券面额：{{jme}}元 </text>
+          <text>{{item.volume}}人已买 </text> </view>
+      </view>
+      <view class="expertInfo">
+        <view class="name">
+          {{desc}}</view>
+      </view>
+    </view>
+    <view class="detail" bindtap="detailclick">
+      <i>商品图文详情</i>
+      <text>点击查看></text>
+    </view>
+    <ad unit-id="adunit-b98563c01b6964ce"></ad>
+    <view class="">
+      <import src="/wxParse/wxParse.wxml" />
+      <view class="wxParse">
+        <template is="wxParse" data="{{wxParseData:article_content.nodes}}"></template>
+      </view>
+    </view>
+    <view>
+      <loading hidden="{{hidden}}">
+        加载中...
+      </loading>
+    </view>
+    <view class="zhanwei"></view>
+    <view class="footer">
+      <ul>
+        <li class="jme">
+          劵后
+          <text>\t\t{{jhj}}￥</text>
+          <del> {{item.zk_final_price}} ￥</del>
+        </li>
+        <li class="type">
+          <image src="{{linkUrl}}{{item.user_type==1? '/sulei/tm.png':'/sulei/tb.png'}}"></image>
+        </li>
+        <li class="zf">
+          <navigator url="/pages/card/card">
+            <image src="{{linkUrl}}/sulei/suleiPhone.png"></image>
+          </navigator>
+        </li>
+        <li class="tkl" bindtap="mytap">
+          领劵购买
+        </li>
+      </ul>
+    </view>
+  </block>
+</view>

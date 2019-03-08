@@ -1,0 +1,77 @@
+<!--pages/card/card.wxml-->
+<view class="body">
+  <view class="my_mp">
+    <view class="my_mp_h3" data-mobile="18631690221" bindtap="calling">封庆亚
+      <text class="my_mp_h3_em">高级软件工程师</text>
+    </view>
+    <view class="my_mp_ul">
+      <view class="my_mp_ul_li">
+        <text class="my_mp_ul_li_em" data-mobile="18631690221" bindtap="calling">手机</text>
+        <text class="my_mp_ul_li_a" data-mobile="18631690221" bindtap="calling">18631690221</text>
+      </view>
+      <view class="my_mp_ul_li" data-mobile="18631690221" bindtap="calling">
+        <text class="my_mp_ul_li_em">微信</text>
+        <text>18631690221</text>
+      </view>
+      <view class="my_mp_ul_li">
+        <text class="my_mp_ul_li_em">行业</text>
+        <text>互联网</text>
+      </view>
+      <view class="my_mp_ul_li">
+        <text class="my_mp_ul_li_em">网址</text>
+        <text>https://www.orangepay.ai</text>
+      </view>
+      <view class="my_mp_ul_li">
+        <text class="my_mp_ul_li_em">邮箱</text>
+        <text>fengqingya@dingtalk.com</text>
+      </view>
+    </view>
+    <image class="tx_img" src="{{linkUrl}}/sulei/touxiang.png" data-mobile="18631690221" bindtap="calling"></image>
+  </view>
+  <view class="renqi">
+    <view class="ul">
+      <view class="renqi_li" data-mobile="18631690221" bindtap="calling">
+        <image class="rq" mode="aspectFit" src="{{linkUrl}}/sulei/renqi_img.png"></image>
+        <text class="renqi_li_span">人气：100000+</text>
+      </view>
+      <view class="renqi_li" data-mobile="18631690221" bindtap="calling">
+        <image class="dz_no" mode="aspectFit" src="{{linkUrl}}/sulei/dianzan_img.png"></image>
+        <text class="renqi_li_span">点赞：100000+</text>
+
+      </view>
+      <view class="renqi_li" data-mobile="18631690221" bindtap="calling">
+        <image class="sc_no" mode="aspectFit" src="{{linkUrl}}/sulei/shoucang_img.png"></image>
+        <text class="renqi_li_span">转发：100000+</text>
+      </view>
+    </view>
+  </view>
+  <view class="gslx">
+    <view class="ul">
+
+      <block wx:if="{{info.tradeTwo != ''}}">
+        <view class="gslx_li line">
+          <view class="gslx_li_em">业务</view>
+          <text class="gslx_li_span">
+            <text class="gslx_li_text">微信小程序、全平台广告投放等等</text>
+          </text>
+        </view>
+      </block>
+      <block wx:if="{{info.tradeOne != ''}}">
+        <view class="gslx_li line">
+          <view class="gslx_li_em">公司</view>
+          <text class="gslx_li_span">桔籽儿邯郸网络科技有限公司</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <div class="mdm" id="zsmp">
+    <button bindtap="show" class="dmp" open-type="share">递名片</button>
+    <button class="bjmp" data-mobile="18631690221" bindtap="calling">拨打电话</button>
+  </div>
+  <ad unit-id="adunit-b98563c01b6964ce"></ad>
+  <div class="fengxiang">
+    <img src="images/fenxiang.png" />
+  </div>
+  <import src="/pages/temp/temp.wxml" />
+  <template is="msgItem" data="{{linkUrl,navbar}}" />
+</view>

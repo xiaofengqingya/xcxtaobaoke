@@ -1,0 +1,307 @@
+/* pages/card/card.wxss */
+.line {
+    position:relative;
+  }
+.line:after {
+    width:200%;
+    height:200%;
+    position:absolute;
+    top:0;left:0;
+    z-index:0;
+    content:"";
+    -webkit-transform:scale(0.5);
+    -webkit-transform-origin:0 0;
+    transform:scale(0.5);
+    transform-origin:0 0;
+  }
+
+.body {
+  font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height: 150%;
+  font-size: 14px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0;
+}
+
+.my_mp {
+  width: 94%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 25px 15px;
+  background: #f4f4f4;
+  position: relative;
+  top: 8px;
+}
+
+.my_mp_h3 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.my_mp_h3_em {
+  font-size: 18px;
+  color: #666;
+  margin-left: 5px;
+  font-style: normal;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.tx_img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 70px;
+  overflow: hidden;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.my_mp_ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+.my_mp_ul_li {
+  overflow: hidden;
+  line-height: 20px;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.my_mp_ul_li_em {
+  padding-right: 10px;
+  display: block;
+  float: left;
+  color: #999;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.my_mp ul li span {
+  display: block;
+  float: right;
+  color: #333;
+}
+
+.my_mp_ul_li_a {
+  color: #09f;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 20px;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.renqi {
+  width: 94%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 23px 0 15px;
+}
+
+.renqi_li {
+  float: left;
+  width: 33.333333%;
+  height: 10%;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 1px solid #eee;
+  list-style: none;
+  position: relative;
+}
+
+.renqi_li:first-child {
+  border: none;
+}
+
+.rq {
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.dz_no {
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.sc_no {
+  
+  width: 20px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.dz_yes {
+  background: url(http://cards.woxiaoyun.com/images/dianzan_img.png) no-repeat 50% 50%/auto 20px;
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.sc_yes {
+  background: url(http://cards.woxiaoyun.com/images/shoucang_img.png) no-repeat 50% 50%/auto 20px;
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ul {
+  list-style: none;
+}
+
+.renqi_li_span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.gslx {
+  width: 94%;
+  padding: 0 3%;
+  border-bottom: 8px solid #eee;
+  border-top: 8px solid #eee;
+}
+
+.gslx_li {
+  padding:14px 0 14px 40px;
+}
+
+.gslx_li:after{
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+}
+
+.gslx_li_em {
+  width: 40px;
+  display: block;
+  color: #666;
+  font-style: normal;
+  list-style: none;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  line-height: 20px;
+}
+
+.gslx_li_span {
+  display: block;
+  list-style: none;
+  font-size: 15px;
+}
+
+.gslx_li_span_i {
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  font-style: normal;
+  list-style: none;
+  font-size: 15px;
+}
+
+.gslx_li_text{
+  font-size: 15px;
+}
+
+.gslx_li:last-child {
+  border: none;
+}
+
+.mdm {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.dmp {
+  margin-top: 15px;
+  color: #fff;
+  background: #18ad15;
+  width: 94%;
+  margin: 10px auto 10px;
+  line-height: 45px;
+  height: 45px;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.bjmp {
+  color: #666;
+  background: #e5e5e5;
+  width: 94%;
+  margin: 0 auto 10px;
+  line-height: 45px;
+  height: 45px;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fengxiang {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  width: 58.5px;
+  height: 21px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  margin-left: -30px;
+}
+
+.showrq {
+  width: 58.5px;
+  height: 21px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: -20px;
+  margin-left: -20px;
+}
+
+.renqi_li_span_btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  margin-top: -10px;
+}

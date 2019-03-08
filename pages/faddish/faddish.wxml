@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="">
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">女装</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">男装</view>
+      <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">鞋包</view>
+      <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">珠宝配饰</view>
+      <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">运动户外</view>
+      <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">美妆</view>
+      <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">母婴</view>
+      <view class="tab-item {{currentTab==8?'active':''}}" data-current="8" bindtap="swichNav">食品</view>
+      <view class="tab-item {{currentTab==9?'active':''}}" data-current="9" bindtap="swichNav">内衣</view>
+      <view class="tab-item {{currentTab==10?'active':''}}" data-current="10" bindtap="swichNav">数码</view>
+      <view class="tab-item {{currentTab==11?'active':''}}" data-current="11" bindtap="swichNav">家装</view>
+      <view class="tab-item {{currentTab==12?'active':''}}" data-current="12" bindtap="swichNav">家居用品</view>
+      <view class="tab-item {{currentTab==13?'active':''}}" data-current="13" bindtap="swichNav">家电</view>
+      <view class="tab-item {{currentTab==14?'active':''}}" data-current="14" bindtap="swichNav">汽车</view>
+      <view class="tab-item {{currentTab==15?'active':''}}" data-current="15" bindtap="swichNav">生活服务</view>
+      <view class="tab-item {{currentTab==16?'active':''}}" data-current="16" bindtap="swichNav">图书音像</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" Words="{{keyWords}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+      <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}" wx:key="*this">
+        <scroll-view scroll-y="true" class="scoll-h" bindscrolltolower="bindDownLoad">
+          <block wx:for="{{videoList}}" wx:key="title">
+            <view class="item-ans" data-id='{{item.num_iid}}' data-jhj='{{(item.commission_rate)}}' data-jme='{{item.coupon_info}}' data-desc='{{item.item_description}}' data-linkurl='{{item.coupon_click_url}}' data-title='{{item.title}}' data-imgurl='{{item.pict_url}}'
+              bindtap="navigator">
+
+              <view class="avatar">
+                <image class="img" src="{{item.pict_url}}"></image>
+              </view>
+              <view class="expertInfo">
+                <view class="name">
+                  <image class="tm" src="{{linkUrl}}{{item.user_type? '/sulei/tb.png':'/sulei/tm.png'}}"></image>
+                  {{item.title}}</view>
+                <view class="xj">现价 ￥{{item.zk_final_price}} 月销 {{item.volume}}件</view>
+                <view class="jhj">
+                  <i>劵后价</i>
+                  <text>￥{{(item.commission_rate)}}</text>
+                </view>
+                <view class="shul">数量：{{item.coupon_remain_count}}/{{item.coupon_total_count}}张</view>
+              </view>
+              <view class="askBtn">
+                <view class="juan">
+                  <text>￥{{item.coupon_info}}</text>
+                </view>
+                <view class="juanName">
+                  <text>优惠券</text>
+                </view>
+                <view class="dianji">
+                  <text>查看详情</text>
+                </view>
+              </view>
+
+            </view>
+          </block>
+        </scroll-view>
+      </swiper-item>
+
+    </swiper>
+
+  </view>
+
+  <view>
+
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+  </view>
+  <import src="/pages/temp/temp.wxml" />
+  <template is="msgItem" data="{{linkUrl,navbar}}" />
+</view>

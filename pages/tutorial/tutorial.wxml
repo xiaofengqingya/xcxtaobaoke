@@ -1,0 +1,8 @@
+<!--pages/tutorial/tutorial.wxml-->
+<view class="container">
+<view class="about">
+    <view class="about-con">
+    <image src='{{linkUrl}}/sulei/tutorial.jpg' style="width:100%" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

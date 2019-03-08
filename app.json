@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/temp/temp",
+    "pages/about/about",
+    "pages/coupons/coupons",
+    "pages/card/card",
+    "pages/content/content",
+    "pages/home/home",
+    "pages/nine/nine",
+    "pages/twenty/twenty",
+    "pages/faddish/faddish",
+    "pages/live/live",
+    "pages/tutorial/tutorial",
+    "pages/search/search",
+    "pages/third/third"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  }
+}
